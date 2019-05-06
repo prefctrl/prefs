@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# TODO use os.bash util
+if [[ ! $(uname -s) = 'Darwin' ]]; then
+	if grep -q Microsoft /proc/version; then
+		# Ubuntu on Windows using the Linux subsystem
+		# TODO move to aliases
+		alias open='explorer.exe';
+	else
+	  # TODO move to aliases
+		alias open='xdg-open';
+	fi
+fi
+
+main() {
+	if [[ $# -eq 0 ]]; then
+		open .;
+	else
+		open "$@";
+	fi;
+}
+main

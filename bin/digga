@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+main() {
+	dig +nocmd "$1" any +multiline +noall +answer;
+}
+main

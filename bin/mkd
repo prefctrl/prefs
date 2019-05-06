@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+source "${0%/*}/../.internals/utils.bash"
+
+main() {
+  prefctl::ensure_dir "$@" && cd "$_"
+}
+main

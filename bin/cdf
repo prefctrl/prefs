@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+main() {
+  cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')";
+}
+main

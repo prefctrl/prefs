@@ -1,0 +1,6 @@
+- backup bookmarks from Chrome
+- backup bookmarks from Firefox
+- create JSON abstraction for all bookmarks
+- script to get bookmarks from Chrome/Firefox to JSON format
+- script to export bookmarks from JSON format to respective formats and to browser install directories
+- script to export bookmarks to Qlearly format

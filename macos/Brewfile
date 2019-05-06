@@ -1,0 +1,92 @@
+# TODO abstract these to a text file format so that each system can install the same dependencies
+# general utils
+brew "coreutils" # https://www.gnu.org/software/coreutils/manual/coreutils.html
+brew "findutils" # https://www.gnu.org/software/findutils/manual/html_mono/find.html
+brew "parallel" # https://www.gnu.org/software/parallel/parallel_cheat.pdf
+brew "gnu-sed", args: ["--with-default-names"] # https://www.gnu.org/software/sed/manual/sed.html
+
+# file-system search
+brew "grep" # https://www.gnu.org/software/grep/manual/grep.html
+brew "ack" # https://beyondgrep.com/documentation/ack-2.28-man.html
+
+# remote tools
+brew "openssh" # https://www.openssh.com/manual.html
+
+# windows emulation
+brew "screen" # https://www.gnu.org/software/screen/manual/screen.html
+
+# crypto
+brew "gnupg" # https://gnupg.org/
+brew "gmp" # https://gmplib.org/
+
+# web font tools
+# https://github.com/bramstein/homebrew-webfonttools
+tap "bramstein/webfonttools"
+# web font tools pack
+brew "woff2"
+brew "sfnt2woff"
+brew "sfnt2woff-zopfli"
+brew "ttf2eot"
+brew "ots"
+
+# CFT tools
+brew "aircrack-ng" # WIFI network security tool
+brew "bfg" # https://github.com/rtyley/bfg-repo-cleaner
+brew "binutils" # https://www.gnu.org/software/binutils/binutils.html
+brew "binwalk"
+brew "cifer"
+brew "dex2jar"
+brew "dns2tcp"
+brew "fcrackzip"
+brew "foremost"
+brew "hashpump"
+brew "hydra"
+brew "john"
+brew "knock"
+brew "netpbm"
+brew "nmap"
+brew "pngcheck"
+brew "socat"
+brew "sqlmap"
+brew "tcpflow"
+brew "tcpreplay"
+brew "tcptrace"
+brew "uscpi-tcp"
+brew "xpdf"
+brew "xz"
+
+# useful binaries
+brew "exa" # https://the.exa.website/introduction
+brew "imagemagick", args: ["--with-webp"]
+brew "lua"
+brew "lynx"
+brew "p7zip"
+brew "pigz"
+brew "pv"
+brew "rename"
+brew "rlwrap"
+brew "ssh-copy-id"
+brew "tree"
+brew "vbindiff"
+brew "zopfli"
+brew "direnv"
+brew "exiftool"
+brew "flac"
+brew "fpp"
+brew "grc"
+brew "ag"
+brew "watch"
+brew "glances" # https://glances.readthedocs.io/en/latest/
+brew "fx"
+
+# macOS apps
+mas "Xcode", id: 497799835
+cask "iterm2" # terminal emulation
+cask "jetbrains-toolbox" # WebStorm, Rider, PyCharm, etc.
+cask "dash" # offline docs w/ search, and snippets
+cask "1password" # password management
+cask "quicksilver" # macOS 10.14.x has introduced some performance issues with Spotlight, I use QuickSliver for now
+
+# macOS AppStore apps
+mas "com.manytricks.Moom", id: 419330170 # keyboard shortcuts for GUI window management
+mas "net.shinyfrog.bear", id: 1091189122 # Bear Notes, markdown notes application with a tagging system

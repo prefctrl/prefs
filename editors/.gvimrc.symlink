@@ -1,0 +1,4 @@
+set background=dark
+set guifont="Operator Mono":h12
+set guicursor=n:blinkon0
+set linespace=8

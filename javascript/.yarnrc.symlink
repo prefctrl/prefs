@@ -1,0 +1,4 @@
+yarn-offline-mirror "$HOME/.yarn-cache"
+yarn-offline-mirror-pruning true
+unsafe-disable-integrity-migration false
+child-concurrency 20

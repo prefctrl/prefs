@@ -1,0 +1,2 @@
+cask "chrome"
+cask "firefox", args: { appdir: "$HOME/Applications" }
